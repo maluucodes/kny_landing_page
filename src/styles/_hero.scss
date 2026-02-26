@@ -1,0 +1,56 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero {
+    padding: 5.6vw;
+    min-height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/hero.png);
+
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 150px;
+
+        &__title {
+            font-size: 80px;
+            color: variables.$corTitulo1;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px variables.$corTitulo2,
+                0 0 20px variables.$corTitulo2,
+                0 0 30px variables.$corTitulo2,
+                0 0 40px variables.$corTitulo2,
+                0 0 55px variables.$corTitulo2,
+                0 0 75px variables.$corTitulo2;
+        }
+
+        &__button {
+            padding: 16px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 75px;
+            background-color: variables.$corFundoBotao;
+            color: variables.$corTextoBotao;
+            border: 10px solid variables.$corBordaBotao;
+        }
+
+        
+        &__branding {
+            img {
+                max-width: 360px;
+            }
+        }
+    }
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}

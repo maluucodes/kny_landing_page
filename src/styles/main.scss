@@ -1,5 +1,31 @@
-$colorr: rgb(248, 99, 99);
+@use 'hero';
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
 
 body {
-    background-color: $colorr;
+    background-color: variables.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+.text--big {
+    @include text(20px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(10px);
 }
