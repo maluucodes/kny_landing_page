@@ -12,9 +12,115 @@
             <h1 class="hero__content__branding">
                 <img src="./src/images/logo.png" alt="demon slayer logo">
             </h1>
-            <h2 class="hero__content__title">MUGEN TRAIN</h2>
+            <h2 class="hero__content__title main-text">MUGEN TRAIN</h2>
             <button type="button"class="hero__content__button">Watch now</button>
         </div>
     </section>
+    <section class="scenes">
+        <nav class="scenes__tabs">
+            <button data-tab-button="characters_tab" class="scenes__tabs__button scenes__tabs__button--is--active">Characters</button>
+            <button data-tab-button="powers_tab" class="scenes__tabs__button">Powers</button>
+            <button data-tab-button="rengoku_tab" class="scenes__tabs__button">Kyojuro Rengoku</button>
+        </nav>
+        <ul data-tab-id="characters_tab" class="scenes__list scenes__list--is--active">
+            <li class="scenes__list__item">
+                <img src="./src/images/characters/tanjiro.jpg" alt="tanjiro">
+                <p>Tanjiro Kamado</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/characters/nezuko.jpg" alt="nezuko">
+                <p>Nezuko Kamado</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/characters/zenitsu.jpg" alt="zenitsu">
+                <p>Zenitsu Agatsuma</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/characters/inosuke.jpg" alt="inosuke">
+                <p>Inosuke Hashibira</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/characters/enmu.jpg" alt="enmu">
+                <p>Enmu (lower one)</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/characters/akaza.jpg" alt="akaza">
+                <p>Akaza (upper three)</p>
+            </li>
+        </ul>
+                <ul data-tab-id="powers_tab" class="scenes__list">
+            <li class="scenes__list__item">
+                <img src="./src/images/powers/agua.jpg" alt="water breathing">
+                <p>Water Breathing</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/powers/chama.jpg" alt="flame breathing">
+                <p>Flame Breathing</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/powers/trovao.jpg" alt="thunder breathing">
+                <p>Thunder Breathing</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/powers/fera.jpg" alt="beast breathing">
+                <p>Beast Breathing</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/powers/kekkijutsu1.jpg" alt="exploding blood">
+                <p>Exploding Blood</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/powers/kekkijutsu2.jpg" alt="compass needle">
+                <p>Compass Needle</p>
+            </li>
+        </ul>
+                <ul data-tab-id="rengoku_tab" class="scenes__list">
+            <li class="scenes__list__item">
+                <img src="./src/images/rengoku/kyojuro.jpg" alt="after meal happy rengoku">
+                <p>Scene #1</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/rengoku/kyojuro2.jpg" alt="rengoku in flashback">
+                <p>Scene #2</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/rengoku/kyojuro3.jpg" alt="rengoku in sunlight">
+                <p>Scene #3</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/rengoku/kyojuro4.jpg" alt="rengoku staring at you">
+                <p>Scene #4</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/rengoku/kyojuro5.jpg" alt="rengoku being cool">
+                <p>Scene #5</p>
+            </li>
+            <li class="scenes__list__item">
+                <img src="./src/images/rengoku/kyojuro6.jpg" alt="rengoku dying">
+                <p>Scene #6</p>
+            </li>
+        </ul>
+    </section>
+    <section class="platforms">
+        <h2 class="main-text">Where to Watch</h2>
+        <ul class="platforms__list">
+            <li class="platforms__list__item">
+                <img class="plat-img" src="./src/images/platforms/netflix.png" alt="netflix logo">
+                <strong class="plat-price">R$ 45,90/month</strong>
+                <button class="button-go">Subscribe</button>
+            </li>
+            <li class="platforms__list__item">
+                <img class="plat-img" src="./src/images/platforms/crunchyroll.png" alt="crunchyroll logo">
+                <strong class="plat-price">R$ 18,90/month</strong>
+                <button class="button-go">Subscribe</button>
+            </li>
+            <li class="platforms__list__item">
+                <img class="plat-img" src="./src/images/platforms/prime video.png" alt="prime video logo">
+                <strong class="plat-price">R$ 24,90/month</strong>
+                <button class="button-go">Subscribe</button>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>

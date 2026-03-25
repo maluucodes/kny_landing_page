@@ -1,0 +1,57 @@
+@use 'variables';
+
+.scenes {
+    &__list {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        background-color: variables.$corPrimaria;
+        border-radius: 10px;
+        padding-bottom: 14px;
+
+        &--is--active {
+            display: grid;
+
+        }
+        
+        &__item {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                border-radius: 10px;
+                border: 1px solid variables.$corDeFundo;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 20px 0;
+
+        &__button {
+            background-color: variables.$corFundoBotao;
+            border-bottom: 5px;
+            padding: 10px;
+            color: variables.$corTextoBotao;
+            margin: 0 6px;
+            font-size: 16px;
+            border-radius: 75px;
+            border: 4px solid variables.$corBordaBotao;
+            font-weight: bold;
+
+            &--is--active {
+                background-color: variables.$corTitulo1;
+            }
+        }
+    }
+}

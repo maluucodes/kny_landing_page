@@ -19,15 +19,7 @@
 
         &__title {
             font-size: 80px;
-            color: variables.$corTitulo1;
-            text-shadow:
-                0 0 5px #fff,
-                0 0 10px variables.$corTitulo2,
-                0 0 20px variables.$corTitulo2,
-                0 0 30px variables.$corTitulo2,
-                0 0 40px variables.$corTitulo2,
-                0 0 55px variables.$corTitulo2,
-                0 0 75px variables.$corTitulo2;
+            
         }
 
         &__button {
@@ -53,4 +45,5 @@ button:hover {
     transform: scale(1.05);
     cursor: pointer;
     transition: all 0.2s ease;
+    background-color: variables.$corPrimaria;
 }

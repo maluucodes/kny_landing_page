@@ -1,5 +1,7 @@
 @use 'hero';
 @use 'variables';
+@use 'scenes';
+@use 'platforms';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -13,19 +15,14 @@ body {
     background-color: variables.$corDeFundo;
 }
 
-@mixin text($fontSize: 16px) {
-    font-size: $fontSize;
-    line-height: $fontSize + 10px;
-}
-
-.text--big {
-    @include text(20px);
-}
-
-.text {
-    @include text;
-}
-
-.text--small {
-    @include text(10px);
+.main-text {
+    color: variables.$corTitulo1;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px variables.$corTitulo2,
+                0 0 20px variables.$corTitulo2,
+                0 0 30px variables.$corTitulo2,
+                0 0 40px variables.$corTitulo2,
+                0 0 55px variables.$corTitulo2,
+                0 0 75px variables.$corTitulo2;
 }

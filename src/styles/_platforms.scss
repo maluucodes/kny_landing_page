@@ -1,0 +1,52 @@
+@use 'variables';
+
+.platforms {
+    padding: 5.6vw;
+
+    .main-text {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        background-color: variables.$corPrimaria;
+        border-radius: 10px;
+
+        &__item {
+            text-align: center;
+            padding: 30px;
+            list-style: none;
+
+            strong {
+                display: block;
+            }
+        }
+    }
+}
+
+.button-go {
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 75px;
+    background-color: variables.$corFundoBotao;
+    color: variables.$corTextoBotao;
+    border: 10px solid variables.$corBordaBotao;
+}
+
+.plat-img {
+    width: 260px;
+    border-radius: 10px;
+}
+
+.plat-price {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
