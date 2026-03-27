@@ -1,0 +1,28 @@
+@use 'variables';
+
+.kyo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: variables.$corPrimaria;
+    border-radius: 10px;
+    border: 2px solid variables.$corBordaBotao;
+
+    img {
+        width: 550px;
+        padding: 10px 10px 0 0px;
+    }
+}
+
+.about-kyo {
+    padding: 80px;
+    h2 {
+        text-align: center;
+    }
+    p {
+        padding-top: 15px;
+    } 
+
+}

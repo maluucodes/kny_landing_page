@@ -11,6 +11,7 @@
         background-color: variables.$corPrimaria;
         border-radius: 10px;
         padding-bottom: 14px;
+        border: 2px solid variables.$corBordaBotao;
 
         &--is--active {
             display: grid;

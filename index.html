@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo"src="./src/images/logo.png" alt="Demon Slayer logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item"><a class="main-text" href="#scenes">Movie Scenes</a></li>
+                <li class="header__links__item"><a class="main-text" href="#platforms">Where to Watch</a></li>
+                <li class="header__links__item"><a class="main-text" href="#kyo">About Kyojuro</a></li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./src/images/logo.png" alt="demon slayer logo">
-            </h1>
+            </div>
             <h2 class="hero__content__title main-text">MUGEN TRAIN</h2>
             <button type="button"class="hero__content__button">Watch now</button>
         </div>
     </section>
-    <section class="scenes">
+    <section class="scenes" id="scenes">
         <nav class="scenes__tabs">
             <button data-tab-button="characters_tab" class="scenes__tabs__button scenes__tabs__button--is--active">Characters</button>
             <button data-tab-button="powers_tab" class="scenes__tabs__button">Powers</button>
@@ -101,7 +113,7 @@
             </li>
         </ul>
     </section>
-    <section class="platforms">
+    <section class="platforms" id="platforms">
         <h2 class="main-text">Where to Watch</h2>
         <ul class="platforms__list">
             <li class="platforms__list__item">
@@ -121,6 +133,16 @@
             </li>
         </ul>
     </section>
+    <section class="kyo" id="kyo">
+        <img src="./src/images/kyo.png" alt="kyojuro rengoku">
+        <div class="about-kyo">
+            <h2>About Kyo</h2>
+            <p>Rengoku’s personality is vibrant and enthusiastic, often expressing himself with bold confidence and kindness toward others. Despite his cheerful demeanor, he carries the weight of responsibility passed down from his family, honoring his role with pride and discipline. His mastery of Flame Breathing techniques makes him a formidable warrior in battle. Rengoku plays a crucial role during the Mugen Train arc, where his strength, leadership, and selflessness leave a lasting impact on those around him. Even in the face of overwhelming danger, he stands firm, prioritizing the safety of others above his own life. He's my fav character <3</p>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
     <script src="./src/main.js"></script>
 </body>
 </html>
